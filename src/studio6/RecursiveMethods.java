@@ -14,9 +14,18 @@ public class RecursiveMethods {
 	public static double geometricSum(int n) {
 		
 			// FIXME compute the geometric sum for the first n terms recursively
-			return 0;
 		
-	}
+		if (0 <n)
+		{
+			return (1/Math.pow(2, n)) + geometricSum(n-1);
+		}
+		
+	
+		
+		public static void main (String[]args) {
+		System.out.println(geometricSum(1));
+		}
+	
 
 	/**
 	 * This method uses recursion to compute the greatest common divisor
